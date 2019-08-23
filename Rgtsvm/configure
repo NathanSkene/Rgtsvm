@@ -2463,8 +2463,10 @@ LIBS="-lcuda"
 # Check whether --with-boost-home was given.
 if test "${with_boost_home+set}" = set; then :
   withval=$with_boost_home; BOOST_HOME="$withval"
+  echo "WITH-BOOST-HOME WAS DETECTED!!!!!"
 else
   BOOST_HOME=/usr/local/boost
+  echo "WITH-BOOST-HOME WAS NOT DETECTED!!!!!" 
 fi
 
 { $as_echo "$as_me:${as_lineno-$LINENO}: result: setting BOOST home directory to ${BOOST_HOME}" >&5
